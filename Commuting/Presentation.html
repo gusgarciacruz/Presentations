@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title> The commuting behavior of informal workers    How centralized are informal jobs?  </title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".hbody[ Gustavo A. García   School of Finances, Economics and Government   Universidad EAFIT   ggarci24@eafit.edu.co]" />
+    <meta name="author" content=".hbody[ Abner Agudelo  School of Finances, Economics and Government   Universidad EAFIT  aagude50@eafit.edu.co]" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i>","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times-circle\" style=\"color: #F94144\"><\/i>"})</script>
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# <br>The commuting behavior of informal workers <br> <span style= "font-size:75%"> How centralized are informal jobs? <br>
+]
+.author[
+### .hbody[<font size="5"> <strong>Gustavo A. García</strong> <br> <font size="4">School of Finances, Economics and Government <br> Universidad EAFIT <br> <a href="mailto:ggarci24@eafit.edu.co" class="email">ggarci24@eafit.edu.co</a>]
+]
+.author[
+### .hbody[<font size="5"> <strong>Abner Agudelo</strong> <br><font size="4">School of Finances, Economics and Government <br> Universidad EAFIT<br> <a href="mailto:aagude50@eafit.edu.co" class="email">aagude50@eafit.edu.co</a>]
+]
+.date[
+### <br><br>.hbody[<font size="4"> XIV Encuentro Nacional de la Asociación <br> Colombiana de Estudios Regional - ASCER 2022 <br> Universidad del Norte <br> Barranquilla-Colombia <br> 25 November 2022]
+]
+
+---
+
+
+
+
+&lt;style&gt;
+
+.hbody {
+  line-height: .85;
+}
+
+body {
+  text-align: justify;
+}
+
+h1{
+  margin-top: -1px;
+  margin-bottom: -3px;
+}
+
+.small-code pre{
+  margin-bottom: -10px;
+  
+}  
+
+.medium-code pre{
+  margin-bottom: 2px;
+  
+}
+
+&lt;/style&gt;
+
+
+
+
+
+
+
+# &lt;span style="font-size:80%"&gt;Outline&lt;/span&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Motivation](#motivation)&lt;/span&gt; &lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Contribution](#contribution)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Data and descriptive statistics](#data)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Econometric model](#model)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Results](#results)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Conclusions](#conclusions)&lt;/span&gt;
+ 
+---
+name: motivation
+# &lt;span style="font-size:80%"&gt;Motivation&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- The analysis of commuting behavior is important for several reasons:
+&lt;p style="margin-bottom: -0.8em"&gt;
+ - time spent in commuting ranks among the &lt;span style="color:blue"&gt;lowest activities in terms of "instant enjoyment"&lt;/span&gt; obtained by individuals (Kahnemand and Krueger, 2006)
+ &lt;p style="margin-bottom: -0.5em"&gt;
+ - there are &lt;span style="color:blue"&gt;psychological costs&lt;/span&gt; associated with travel and commuting and health outcomes are negatively related (Kahnemand et al., 2004)
+&lt;p style="margin-bottom: -0.5em"&gt; 
+ - &lt;span style="color:blue"&gt;Increases in congestion in cities has led to commuting times being a significant part of the total time devoted to the labor market&lt;/span&gt; (Kenworthy and Laube, 1999)
+&lt;p style="margin-bottom: 1.5em"&gt;
+- &lt;span style="color:blue"&gt;Labor economics&lt;/span&gt; `\(\Longrightarrow\)` in job search models commuting is considered a source of labor mobility that allows workers to access geographically-dispersed labor markets (Cameron and Muellbauer, 1998)
+&lt;p style="margin-bottom: 1.5em"&gt;
+- &lt;span style="color:blue"&gt;Urban economics&lt;/span&gt; `\(\Longrightarrow\)` commuting is generally assumed to confer disutility to households, so that households are located to maximize the utility obtained from housing and amenities (Alonso-Mills-Muth monocentric city model, Muller-Gerreau polycentric city model) 
+&lt;p style="margin-bottom: 1.5em"&gt;
+- &lt;span style="color:blue"&gt;Transport economics&lt;/span&gt; `\(\Longrightarrow\)` commuters choose a mode of transport to minimize the monetary and opportunity costs of travel (DeSalvo and Huq, 1996)
+
+---
+name: contribution
+# &lt;span style="font-size:80%"&gt;Contribution&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- Despite the relevance of this issue, &lt;span style="color:blue"&gt;there are few studies that have previously analyzed the commuting patterns among workers and, in particular, in developing countries
+&lt;p style="margin-bottom: -.2em"&gt;
+- The evidence shows that workers have different commuting patterns:
+&lt;p style="margin-bottom: -0.8em"&gt;
+ - &lt;span style="color:blue"&gt;Developed countries&lt;/span&gt;: self-employed workers look for places where they can establish a business, while employees look for job vacancies (US-Europe: Giménez-Nadal et al., 2018, 2020a, 2020b; Spain: Albert et al., 2019)
+ - &lt;span style="color:blue"&gt;Developing countries&lt;/span&gt;: commuting distances and times are shorter for informal workers, because jobs in this sector are more dispersed than jobs in the formal sector (Brazil: Motte et al., 2016; Mexico: Suárez et al., 2016)
+&lt;p style="margin-bottom: -.2em"&gt;
+- In developing countries accessibility is a critical issue, because the &lt;span style="color:blue"&gt;limited opportunities, high job informality and deep socioeconomic differences that exists in these countries is in part explained by low accessibility 
+&lt;p style="margin-bottom: -.2em"&gt;
+- This paper aims at showing &lt;span style="color:blue"&gt;new empirical evidence on the differences in commuting patterns between formal and informal workers&lt;/span&gt;, studying the case of &lt;span style="color:blue"&gt;Latin America cities &lt;br&gt;&lt;p style="margin-top: 0.5em"&gt;
+`\(\Longrightarrow\)` &lt;span style="color:blue"&gt;measure the difference in commuting times by type of work&lt;/span&gt; &lt;br&gt;&lt;p style="margin-top: 1em"&gt;
+`\(\Longrightarrow\)` &lt;span style="color:blue"&gt; analyze the determinants of this difference
+
+---
+name: data
+#  &lt;span style="font-size:80%"&gt;Data and descriptive statistics&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+- The data used in this paper comes from the &lt;span style="color:blue"&gt;2016 CAF (*Banco de Desarrollo de América Latina*) survey&lt;/span&gt; (ECAF) for the main Latin American cities (10):
+&lt;p style="margin-top: -0.5em"&gt;
+  - Argentina: &lt;span style="color:blue"&gt;Buenos Aires
+  - Bolivia: &lt;span style="color:blue"&gt;La Paz
+  - Brazil: &lt;span style="color:blue"&gt;Sao Pablo&lt;/span&gt; and &lt;span style="color:blue"&gt;Fortaleza
+  - Colombia: &lt;span style="color:blue"&gt;Bogotá
+  - Ecuador: &lt;span style="color:blue"&gt;Quito
+  - Mexico: &lt;span style="color:blue"&gt;Ciudad de México
+  - Perú: &lt;span style="color:blue"&gt;Lima
+  - Uruguay: &lt;span style="color:blue"&gt;Montevideo
+  - Panamá: &lt;span style="color:blue"&gt;Ciudad de Panáma
+  
+- This cross-sectional survey contains individual-level information at the urban level on demographic and socioeconomic information from the respondents and a set of characteristics at the household level
+
+- In addition, the ECAF contains specific modules that offer information on accessibility, satisfaction in urban transport services, security, garbage recollection, water and sanitation, electricity, and housing. Each year there is a different module 
+
+- The sample includes a total of 4,038 individuals that in the expanded sample represents approximately 13 million people
+
+---
+#  &lt;span style="font-size:80%"&gt;Data and descriptive statistics&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+&lt;span style="color:blue"&gt;Labor informality&lt;/span&gt;&lt;br&gt;
+Informal workers are those employees who do not contribute to the social security system: health and pension (Perry et al., 2007; Jütting and De Laiglesia, 2009: García, 2017)
+
+&lt;img src="T1.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive statistics&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+
+&lt;img src="T2.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive statistics&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+
+&lt;img src="T3.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive statistics&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+
+&lt;img src="T4.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive statistics&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+
+&lt;img src="T5.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+name: model
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt; 
+&lt;spam style="font-size:120%"&gt;
+
+To analyse the determinants of differences in commuting times between formal and informal workers, we use the Oaxaca-Blinder decomposition technique (Blinder, 1973; Oaxaca, 1973; Fortin et al., 2010)&lt;br&gt;
+
+&lt;p style="margin-top: 1.5em"&gt;
+
+The raw average gap between two collectives in the value of a continuous variable to be broken down into two parts: 
+&lt;p style="margin-top: -.5em"&gt;
+- &lt;span style="color:blue"&gt;explained component&lt;/span&gt;: the average differences between the two groups in terms of observed characteristics
+
+- &lt;span style="color:blue"&gt;unexplained component&lt;/span&gt;: measures the extent to which the coefficients of the characteristics of comparable individuals of the two groups are different
+
+&lt;p style="margin-top: 1.5em"&gt;
+
+An additional advantage of the Oaxaca‐Blinder decomposition is that it provides a&lt;span style="color:blue"&gt; detailed decomposition&lt;/span&gt; of both components according to the relative influence of each set of independent variables considered
+
+---
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt; 
+&lt;spam style="font-size:105%"&gt;
+
+Let `\(G_i = 1\)` for formal employee and `\(G_i = 0\)` for informal employee. We use the logarithm of the comutting time as the outcome variable, which we denote by `\(Y_i\)`
+
+The raw difference in commuting times between formal and informal workers is:
+
+`$$\Delta = E[Y_i|G_i=1] - E[Y_i|G_i=0] \tag{1}$$`
+
+The predicted commuting time of formal workers, would they have the same observed characteristics as informal workers is `\(E_{X|G=1}[\mu_0(x)]\)`, with `\(\mu_0(x)=E[Y_i|G_i=0, X_i = x]\)`, where `\(X_i\)` contains observed demographic and labor market characteristics of workers
+
+Adding and subtracting `\(E_{X|G=1}[\mu_0(x)]\)` in `\((1)\)` gives&lt;p style="margin-top: 2em"&gt;
+
+`$$\Delta = \underbrace{E[Y_i|G_i=1]-E_{X|G=1}[\mu_0(x)]}_{\text{unexplained } (\delta)} + \underbrace{E_{X|G=1}[\mu_0(x)]-E[Y_i|G_i=0]}_{\text{explained } (\eta)}$$`
+&lt;p style="margin-top: 2em"&gt;
+
+`\(\eta\)`: the part of the raw gap in commuting times between formal and informal workers that can
+be &lt;span style="color:blue"&gt;explained by differences in the observed commuting time determinants `\(X_i\)`
+
+&lt;p style="margin-top: 1.5em"&gt;
+
+`\(\delta\)`: the difference in commuting times among workers that &lt;span style="color:blue"&gt;cannot be explained
+by jobs differences in the observed commuting time determinants
+
+---
+name: results
+# &lt;span style="font-size:80%"&gt;Results&lt;/span&gt; 
+&lt;p style="margin-top: -1em"&gt;
+&lt;img src="T6.png" width="46%" style="display: block; margin: auto;" /&gt;
+
+---
+name: conclusions
+# &lt;span style="font-size:80%"&gt;Conclusions&lt;/span&gt;
+&lt;spam style="font-size:130%"&gt;
+
+- This paper examines the commuting behaviour of formal and informal workers in Latin America and evaluate how centralized are informal jobs in terms of commuting times
+
+- We use the information of CAF (*Banco de Desarrollo de América Latina*) survey which gathers individual information on commuting patterns in the main Latin American cities
+
+- We use Oaxaca-Blinder econometric methods of decomposition to measure the difference in commuting time between formal and informal workers and determine what part is due to difference in characteristics and what part is due to unexplained  
+
+- We find that, on average, Latin American workers take &lt;span style="color:blue"&gt;40min&lt;/span&gt; to get to work, being Bogotá, Ciudad de México and Ciudad de Panamá the cities where times are the highest (around &lt;span style="color:blue"&gt;50min&lt;/span&gt;)
+
+- Formal workers take &lt;span style="color:blue"&gt;28%&lt;/span&gt; longer commuting times to get their jobs than informal workers, which could indicate that  &lt;span style="color:blue"&gt;informal jobs are more decentralized&lt;/span&gt; than those formal ones
+
+- The difference in commuting behaviour is mainly explained by differences in &lt;span style="color:blue"&gt;job characteristics (firm size and workplace)&lt;/span&gt; and &lt;span style="color:blue"&gt;transport mode used&lt;/span&gt; between formal and informal workers  
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
