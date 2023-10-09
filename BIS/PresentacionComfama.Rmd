@@ -215,7 +215,7 @@ knitr::include_graphics("f4.png")
 name: resultados1
 # <span style="font-size:80%">Efectos de Empleando Futuro sobre la formalidad</span>
 
-```{r, echo=FALSE, out.width="90%",fig.align='center'}
+```{r, echo=FALSE, out.width="85%",fig.align='center'}
 knitr::include_graphics("f5.png")
 ```
 <p style="margin-bottom: -0.8em">
@@ -230,6 +230,6 @@ name: resultados2
 - <span style="color:blue">Cursos en habilidades duras</span>: sistemas informáticos básicos, atención al cliente y módulos de auxiliar administrativo, entre otros
 - <span style="color:blue">Curso en habilidades sociales</span>: habilidades de comunicación, habilidades relacionales y gestión de conflictos, entre otros
 
-```{r, echo=FALSE, out.width="83%",fig.align='center'}
+```{r, echo=FALSE, out.width="80%",fig.align='center'}
 knitr::include_graphics("f6.png")
 ```
