@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title> Efectos de la formación para el empleo sobre la formalidad laboral   Evidencia de un programa de pagos por resultados en Colombia </title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".hbody[ Michael Cardona   School of Finances, Economics and Government   Universidad EAFIT   macardonar@eafit.edu.co]" />
+    <meta name="author" content=".hbody[ Juan Camilo Chaparro  School of Finances, Economics and Government   Universidad EAFIT  jcchaparrc@eafit.edu.co]" />
+    <meta name="author" content=".hbody[ Gustavo A. García   School of Finances, Economics and Government   Universidad EAFIT   ggarci24@eafit.edu.co]" />
+    <script src="libs/header-attrs-2.23/header-attrs.js"></script>
+    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i>","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times-circle\" style=\"color: #F94144\"><\/i>"})</script>
+    <link href="libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+    <link href="libs/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# <br><span style= "font-size:75%">Efectos de la formación para el empleo sobre la formalidad laboral<br> <span style= "font-size:75%"> Evidencia de un programa de pagos por resultados en Colombia<br>
+]
+.author[
+### .hbody[<font size="5"> Michael Cardona <br> <font size="4">School of Finances, Economics and Government <br> Universidad EAFIT <br> <a href="mailto:macardonar@eafit.edu.co" class="email">macardonar@eafit.edu.co</a>]
+]
+.author[
+### .hbody[<font size="5"> Juan Camilo Chaparro <br><font size="4">School of Finances, Economics and Government <br> Universidad EAFIT<br> <a href="mailto:jcchaparrc@eafit.edu.co" class="email">jcchaparrc@eafit.edu.co</a>]
+]
+.author[
+### .hbody[<font size="5"> <strong>Gustavo A. García</strong> <br> <font size="4">School of Finances, Economics and Government <br> Universidad EAFIT <br> <a href="mailto:ggarci24@eafit.edu.co" class="email">ggarci24@eafit.edu.co</a>]
+]
+.date[
+### <br>.hbody[<font size="5"> <span style="color:#ff277e">Comfama</span></font> <br><font size="4"> 13 octubre 2023]
+]
+
+---
+
+
+
+
+&lt;style&gt;
+.my-logo-right {
+    content: "";
+    position: absolute;
+    left: 400px;
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("qr.png");
+}
+
+.hbody {
+  line-height: .85;
+}
+
+body {
+  text-align: justify;
+}
+
+h1{
+  margin-top: -1px;
+  margin-bottom: -3px;
+}
+
+.small-code pre{
+  margin-bottom: -10px;
+  
+}  
+
+.medium-code pre{
+  margin-bottom: 2px;
+  
+}
+
+&lt;/style&gt;
+
+
+
+
+
+
+&lt;font size = "5"&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+#&lt;div class="my-logo-right"&gt;&lt;/div&gt; 
+Link slides en formato [html](https://gusgarciacruz.github.io/Presentations/BIS/PresentacionComfama.html)
+
+Link slides en formato [PDF](https://gusgarciacruz.github.io/Presentations/BIS/PresentacionComfama.pdf)
+
+---
+# &lt;span style="font-size:80%"&gt;Outline&lt;/span&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Qué es un Bono de Impacto Social (BIS)?](#bis)&lt;/span&gt; &lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;BIS1: Empleando Futuro](#ef)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Datos y variable de resultado](#datos)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Integrantes de los grupos de control y tratamiento](#grupos)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Modelo de Diferencias en Diferencias (Callaway y SantAnna (2021))](#DD)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Efectos de Empleando Futuro sobre la formalidad](#resultados1)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Efectos de Empleando Futuro por tipo de formación](#resultados1)&lt;/span&gt;
+ 
+---
+name: bis
+# &lt;span style="font-size:80%"&gt;Qué es un Bono de Impacto Social (BIS)?&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+- Los Bonos de Impacto Social (BIS) son un nuevo mecanismo para financiar y estructurar programas de intervención social
+
+- Se originaron en el año 2010 y para mediados de 2017 existían más de 60 proyectos afines en 15 países de ingreso alto en el mundo 
+
+- Los BIS han demostrado ser un buen mecanismo para:
+&lt;p style="margin-bottom: -0.8em"&gt;
+ - La innovación y flexibilidad
+ - La integración de múltiples actores frente a problemáticas sociales
+ - La redistribución del riesgo entre los actores
+ - El acceso a capital privado
+ - La ampliación de la oferta de proveedores de servicio
+
+- Por estas razones y por su creciente implementación se ha creado la necesidad de medir el **impacto** de estas intervenciones sobre los participantes
+
+- BIS en Colombia:
+&lt;p style="margin-bottom: -0.8em"&gt;
+ - Empleando Futuro: Bogotá, Cali y Pereira - junio 2017 y diciembre 2018
+ - Cali progresa con empleo: Cali - abril 2019 y diciembre 2020
+ - Crecemos con Empleo y Oportunidades (CREO) Comfama: Área metropolitana de Medellín - 2021
+ - Creo Inversor: Bogotá, Medellín y Barranquilla - 2021
+
+---
+name: ef
+# &lt;span style="font-size:80%"&gt;Empleando Futuro&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- **Empleando Futuro** es el primer BIS puesto en marcha en un país de ingreso medio como Colombia
+&lt;p style="margin-bottom: -.2em"&gt;
+- **Empleando Futuro** financió la formación y búsqueda de empleo de personas vulnerables y desempleadas
+&lt;p style="margin-bottom: -0.8em"&gt;
+ - La implementación fue entre &lt;span style="color:blue"&gt;junio de 2017 y diciembre 2018&lt;/span&gt;
+ - Se llevó acabo en: &lt;span style="color:blue"&gt;Bogotá, Cali y Pereira&lt;/span&gt;
+ - Apoyó la formación para el empleo, como &lt;span style="color:blue"&gt;formación profesional, apoyo psicosocial y servicios de intermediación laboral
+ - El programa ofrecía entre &lt;span style="color:blue"&gt;100 y 300 horas de formación en habilidades sociales y duras&lt;/span&gt;
+ - Resultados: &lt;span style="color:blue"&gt;empleo formal&lt;/span&gt; y &lt;span style="color:blue"&gt;duración de 3 y 6 meses en el empleo formal&lt;/span&gt;
+
+- El programa iba dirigido a personas:
+&lt;p style="margin-bottom: -0.8em"&gt;
+ - Sin empleo formal al inicio del programa
+ - Con edades comprendidas entre los 18 y los 40 años
+ - Que obtuvieran una puntuación inferior a 41.74 en el Sistema de Selección Benéfica para Programas Sociales (SISBEN) o estaban inscritos en la Red Unidos, o víctimas del desplazamiento debido al conflicto
+ 
+---
+name: datos
+# &lt;span style="font-size:80%"&gt;Datos y variable de resultado&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+&lt;img src="f1.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+name: grupos
+# &lt;span style="font-size:80%"&gt;Integrantes de los grupos de control y tratamiento&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+&lt;img src="f2.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+name: grupos
+# &lt;span style="font-size:80%"&gt;Integrantes de los grupos de control y tratamiento&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+&lt;img src="f3.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+name: DD
+# &lt;span style="font-size:80%"&gt;Modelo de Diferencias en Diferencias (Callaway y SantAnna (2021))&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+&lt;img src="f4.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+name: resultados1
+# &lt;span style="font-size:80%"&gt;Efectos de Empleando Futuro sobre la formalidad&lt;/span&gt;
+
+&lt;img src="f5.png" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;p style="margin-bottom: -0.8em"&gt;
+&lt;spam style="font-size:80%"&gt;\* representa estadísticamente significante al 5%
+
+---
+name: resultados2
+# &lt;span style="font-size:80%"&gt;Efectos de Empleando Futuro por tipo de formación&lt;/span&gt;
+&lt;spam style="font-size:80%"&gt;
+
+- Los operadore ofrecieron entre 100 y 300 horas de formación en habilidades sociales (&lt;span style="color:blue"&gt;mediana 50h&lt;/span&gt;) y duras (&lt;span style="color:blue"&gt;mediana 70h&lt;/span&gt;)
+- &lt;span style="color:blue"&gt;Cursos en habilidades duras&lt;/span&gt;: sistemas informáticos básicos, atención al cliente y módulos de auxiliar administrativo, entre otros
+- &lt;span style="color:blue"&gt;Curso en habilidades sociales&lt;/span&gt;: habilidades de comunicación, habilidades relacionales y gestión de conflictos, entre otros
+
+&lt;img src="f6.png" width="83%" style="display: block; margin: auto;" /&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
