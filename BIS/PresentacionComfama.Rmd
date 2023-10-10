@@ -127,7 +127,9 @@ Link slides en formato [PDF](https://gusgarciacruz.github.io/Presentations/BIS/P
 
 - <span style="font-size:150%">[<span style="color:black">Efectos de Empleando Futuro sobre la formalidad](#resultados1)</span><br>
 
-- <span style="font-size:150%">[<span style="color:black">Efectos de Empleando Futuro por tipo de formación](#resultados1)</span>
+- <span style="font-size:150%">[<span style="color:black">Efectos de Empleando Futuro por tipo de formación](#resultados2)</span>
+
+- <span style="font-size:150%">[<span style="color:black">Otras evaluaciones realizadas desde EAFIT](#otras)</span>
  
 ---
 name: bis
@@ -233,3 +235,14 @@ name: resultados2
 ```{r, echo=FALSE, out.width="80%",fig.align='center'}
 knitr::include_graphics("f6.png")
 ```
+
+---
+name: otras
+# <span style="font-size:80%">Otras evaluaciones realizadas desde EAFIT</span>
+<spam style="font-size:120%">
+
+- <span style="color:blue">Subsidios de transporte escolar</span> - Secretaría de Educación de Medellín
+
+- <span style="color:blue">Hogares Saludables</span> - Argos (déficit cualitativo de vivienda)
+
+- <span style="color:blue">Línea M de Metrocable</span> - Metro de Medellín (efectos de la accesibilidad sobre la formalidad)
