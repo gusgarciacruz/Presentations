@@ -112,11 +112,11 @@ Link slides en formato [html](https://gusgarciacruz.github.io/Presentations/BIS/
 Link slides en formato [PDF](https://gusgarciacruz.github.io/Presentations/BIS/PresentacionComfama.pdf)
 
 ---
-# <span style="font-size:80%">Outline</span>
+# <span style="font-size:80%">Estructura de la presentación</span>
 
 - <span style="font-size:150%">[<span style="color:black">Qué es un Bono de Impacto Social (BIS)?](#bis)</span> <br>
 
-- <span style="font-size:150%">[<span style="color:black">BIS1: Empleando Futuro](#ef)</span><br>
+- <span style="font-size:150%">[<span style="color:black">Empleando Futuro](#ef)</span><br>
 
 - <span style="font-size:150%">[<span style="color:black">Datos y variable de resultado](#datos)</span><br>
 
@@ -133,7 +133,7 @@ name: bis
 # <span style="font-size:80%">Qué es un Bono de Impacto Social (BIS)?</span>
 <spam style="font-size:110%">
 
-- Los Bonos de Impacto Social (BIS) son un nuevo mecanismo para financiar y estructurar programas de intervención social
+- <span style="color:blue">Los Bonos de Impacto Social (BIS) son un nuevo mecanismo para financiar y estructurar programas de intervención social</span>
 
 - Se originaron en el año 2010 y para mediados de 2017 existían más de 60 proyectos afines en 15 países de ingreso alto en el mundo 
 
@@ -145,23 +145,23 @@ name: bis
  - El acceso a capital privado
  - La ampliación de la oferta de proveedores de servicio
 
-- Por estas razones y por su creciente implementación se ha creado la necesidad de medir el **impacto** de estas intervenciones sobre los participantes
+- Por estas razones y por su creciente implementación se ha creado la necesidad de <span style="color:blue">medir el impacto</span> de estas intervenciones sobre los participantes
 
 - BIS en Colombia:
 <p style="margin-bottom: -0.8em">
- - Empleando Futuro: Bogotá, Cali y Pereira - junio 2017 y diciembre 2018
- - Cali progresa con empleo: Cali - abril 2019 y diciembre 2020
- - Crecemos con Empleo y Oportunidades (CREO) Comfama: Área metropolitana de Medellín - 2021
- - Creo Inversor: Bogotá, Medellín y Barranquilla - 2021
+ - <span style="color:blue">Empleando Futuro (BIS1)</span>: Bogotá, Cali y Pereira - junio 2017 y diciembre 2018
+ - <span style="color:blue">Cali progresa con empleo (BIS2)</span>: Cali - abril 2019 y diciembre 2020
+ - <span style="color:#ff277e">CREO Comfama (BIS3)</span>: Área metropolitana de Medellín - 2021
+ - <span style="color:blue">CREO Inversor (BIS4)</span>: Bogotá, Medellín y Barranquilla - 2021
 
 ---
 name: ef
 # <span style="font-size:80%">Empleando Futuro</span>
 <spam style="font-size:120%">
 
-- **Empleando Futuro** es el primer BIS puesto en marcha en un país de ingreso medio como Colombia
+- <span style="color:blue">Empleando Futuro</span> es el primer BIS puesto en marcha en un país de ingreso medio como Colombia
 <p style="margin-bottom: -.2em">
-- **Empleando Futuro** financió la formación y búsqueda de empleo de personas vulnerables y desempleadas
+- <span style="color:blue">Empleando Futuro</span> financió la formación y búsqueda de empleo de personas vulnerables y desempleadas:
 <p style="margin-bottom: -0.8em">
  - La implementación fue entre <span style="color:blue">junio de 2017 y diciembre 2018</span>
  - Se llevó acabo en: <span style="color:blue">Bogotá, Cali y Pereira</span>
@@ -194,7 +194,6 @@ knitr::include_graphics("f2.png")
 ```
 
 ---
-name: grupos
 # <span style="font-size:80%">Integrantes de los grupos de control y tratamiento</span>
 <spam style="font-size:120%">
 
@@ -219,7 +218,7 @@ name: resultados1
 knitr::include_graphics("f5.png")
 ```
 <p style="margin-bottom: -0.8em">
-<spam style="font-size:80%">\* representa estadísticamente significante al 5%
+<spam style="font-size:60%">\* representa estadísticamente significante al 5%
 
 ---
 name: resultados2
