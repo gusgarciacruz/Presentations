@@ -150,7 +150,7 @@ name: bis
 
 - Por estas razones y por su creciente implementación se ha creado la necesidad de <span style="color:blue">medir el impacto</span> de estas intervenciones sobre los participantes
 
-- BIS en Colombia:
+- [<span style="color:blue">BIS</span>](http://www.sibs.co/) en Colombia:
 <p style="margin-bottom: -0.8em">
  - <span style="color:blue">Empleando Futuro (BIS1)</span>: Bogotá, Cali y Pereira - junio 2017 y diciembre 2018
  - <span style="color:blue">Cali progresa con empleo (BIS2)</span>: Cali - abril 2019 y diciembre 2020
@@ -248,8 +248,11 @@ name: otras
 - <span style="color:blue">[<span style="color:blue">Impacto de las intervenciones físicas en el transporte público](https://publications.iadb.org/es/impacto-de-las-intervenciones-fisicas-en-el-transporte-publico-en-medellin-colombia-como)</span> - Metro de Medellín 
 
 <br>
-<br>
 <center>
 [**<spam style="font-size:130%"><span style="color:blue">Gustavo A. García**](https://gusgarciacruz.github.io/cv)<br>
 **<spam style="font-size:80%">Escuela de Finanzas, Economía y Gobierno**<br>
 **<spam style="font-size:80%">Universidad EAFIT**
+
+```{r, echo=FALSE, out.width="20%",fig.align='center'}
+knitr::include_graphics("qr.png")
+```
