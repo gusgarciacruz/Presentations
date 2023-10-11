@@ -4,7 +4,7 @@ title: <br><span style= "font-size:75%">Efectos de la formación para el empleo 
 author: 
   - .hbody[<span style= "font-size:75%">Michael Cardona</span> <br> <font size="3">Escuela de Finanzas, Economía y Gobierno <br> Universidad EAFIT <br> macardonar@eafit.edu.co]
   - .hbody[<span style= "font-size:75%">Juan Camilo Chaparro</span> <br><font size="3">Escuela de Finanzas, Economía y Gobierno<br> Universidad EAFIT<br> jcchaparrc@eafit.edu.co]
-  - .hbody[<span style= "font-size:75%"><span style="color:red">Gustavo A. García</span></span> <br> <font size="3">Escuela de Finanzas, Economía y Gobierno<br> Universidad EAFIT <br> ggarci24@eafit.edu.co]
+  - .hbody[<span style= "font-size:75%"><span style="color:blue">Gustavo A. García</span></span> <br> <font size="3">Escuela de Finanzas, Economía y Gobierno<br> Universidad EAFIT <br> ggarci24@eafit.edu.co]
   
 date: <br>.hbody[<font size="4"> <span style="color:#ff277e">Comfama</span></font> <br><font size="3"> 13 octubre 2023]
 output:
@@ -166,7 +166,7 @@ name: ef
 <p style="margin-bottom: -.2em">
 - <span style="color:blue">Empleando Futuro</span> financió la formación y búsqueda de empleo de personas vulnerables y desempleadas:
 <p style="margin-bottom: -0.8em">
- - La implementación fue entre <span style="color:blue">junio de 2017 y diciembre 2018</span>
+ - La implementación fue entre <span style="color:blue">marzo de 2017 y diciembre 2018</span>
  - Se llevó acabo en: <span style="color:blue">Bogotá, Cali y Pereira</span>
  - Apoyó la formación para el empleo, como <span style="color:blue">formación profesional, apoyo psicosocial y servicios de intermediación laboral
  - El programa ofrecía entre <span style="color:blue">100 y 300 horas de formación en habilidades sociales y duras</span>
@@ -241,8 +241,15 @@ name: otras
 # <span style="font-size:80%">Otras evaluaciones realizadas desde EAFIT</span>
 <spam style="font-size:120%">
 
-- <span style="color:blue">Subsidios de transporte escolar</span> - Secretaría de Educación de Medellín
+- [<span style="color:blue">Subsidios de transporte escolar](https://doi.org/10.1016/j.seps.2023.101509)</span> - Secretaría de Educación de Medellín
 
-- <span style="color:blue">Hogares Saludables</span> - Argos (déficit cualitativo de vivienda)
+- <span style="color:blue">[<span style="color:blue">Hogares Saludables](https://colombia.argos.co/hogares-saludables/)</span> - Argos (déficit cualitativo de vivienda)
 
-- <span style="color:blue">Línea M de Metrocable</span> - Metro de Medellín (efectos de la accesibilidad sobre la formalidad)
+- <span style="color:blue">[<span style="color:blue">Impacto de las intervenciones físicas en el transporte público](https://publications.iadb.org/es/impacto-de-las-intervenciones-fisicas-en-el-transporte-publico-en-medellin-colombia-como)</span> - Metro de Medellín 
+
+<br>
+<br>
+<center>
+[**<spam style="font-size:130%"><span style="color:blue">Gustavo A. García**](https://gusgarciacruz.github.io/cv)<br>
+**<spam style="font-size:80%">Escuela de Finanzas, Economía y Gobierno**<br>
+**<spam style="font-size:80%">Universidad EAFIT**
