@@ -217,11 +217,14 @@ knitr::include_graphics("f4.png")
 name: resultados1
 # <span style="font-size:80%">Efectos de Empleando Futuro sobre la formalidad</span>
 
-```{r, echo=FALSE, out.width="85%",fig.align='center'}
+```{r, echo=FALSE, out.width="72%",fig.align='center'}
 knitr::include_graphics("f5.png")
 ```
 <p style="margin-bottom: -0.8em">
 <spam style="font-size:60%">\* representa estadísticamente significante al 5%
+
+- <spam style="font-size:90%"> El programa Empleando Futuro genera un <span style="color:blue">efecto positivo sobre la formalidad, incrementando en 21pp la probabilidad obtener un empleo formal</span>, con un mayor efecto en las mujeres respecto a los hombres: <span style="color:blue">24pp vs 17pp
+- <spam style="font-size:90%"> <span style="color:blue">Los efectos positivos del programa persisten en el mediano plazo, con una mayor incidencia en las mujeres
 
 ---
 name: resultados2
@@ -232,10 +235,11 @@ name: resultados2
 - <span style="color:blue">Cursos en habilidades duras</span>: sistemas informáticos básicos, atención al cliente y módulos de auxiliar administrativo, entre otros
 - <span style="color:blue">Curso en habilidades sociales</span>: habilidades de comunicación, habilidades relacionales y gestión de conflictos, entre otros
 
-```{r, echo=FALSE, out.width="80%",fig.align='center'}
+```{r, echo=FALSE, out.width="72%",fig.align='center'}
 knitr::include_graphics("f6.png")
 ```
 
+<spam style="font-size:110%"> <span style="color:blue"> Un mayor énfasis en formación en habilidades sociales tienen un impacto elevado y significativo en la probabilidad de obtener un empleo formal 
 ---
 name: otras
 # <span style="font-size:80%">Otras evaluaciones realizadas desde EAFIT</span>
@@ -243,9 +247,9 @@ name: otras
 
 - [<span style="color:blue">Subsidios de transporte escolar](https://doi.org/10.1016/j.seps.2023.101509)</span> - Secretaría de Educación de Medellín
 
-- <span style="color:blue">[<span style="color:blue">Hogares Saludables](https://colombia.argos.co/hogares-saludables/)</span> - Argos (déficit cualitativo de vivienda)
-
 - <span style="color:blue">[<span style="color:blue">Impacto de las intervenciones físicas en el transporte público](https://publications.iadb.org/es/impacto-de-las-intervenciones-fisicas-en-el-transporte-publico-en-medellin-colombia-como)</span> - Metro de Medellín 
+
+- <span style="color:blue">[<span style="color:blue">Hogares Saludables](https://colombia.argos.co/hogares-saludables/)</span> - Argos (déficit cualitativo de vivienda)
 
 <br>
 <center>
