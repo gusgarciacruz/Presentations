@@ -152,7 +152,7 @@ name: bis
 
 - [<span style="color:blue">BIS</span>](http://www.sibs.co/) en Colombia:
 <p style="margin-bottom: -0.8em">
- - <span style="color:blue">Empleando Futuro (BIS1)</span>: Bogotá, Cali y Pereira - junio 2017 y diciembre 2018
+ - <span style="color:blue">Empleando Futuro (BIS1)</span>: Bogotá, Cali y Pereira - marzo 2017 y diciembre 2018
  - <span style="color:blue">Cali progresa con empleo (BIS2)</span>: Cali - abril 2019 y diciembre 2020
  - **<span style="color:#ff277e">CREO Comfama (BIS3)</span>**: Área metropolitana de Medellín - 2021
  - <span style="color:blue">CREO Inversor (BIS4)</span>: Bogotá, Medellín y Barranquilla - 2021
@@ -258,5 +258,5 @@ name: otras
 **<spam style="font-size:80%">Universidad EAFIT**
 
 ```{r, echo=FALSE, out.width="20%",fig.align='center'}
-knitr::include_graphics("qr.png")
+knitr::include_graphics("qr2.png")
 ```
