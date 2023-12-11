@@ -217,18 +217,18 @@ knitr::include_graphics("Figure1.png")
 #  <span style="font-size:80%">Data and descriptive evidence</span>
 <spam style="font-size:90%">
 
-- Our unit of analysis are the analytical regions, which are homogeneous regions that are defined in terms of (Duque et al., 2012):
+- Our spatial unit of analysis are the analytical regions, which are homogeneous regions that are defined in terms of (Duque et al., 2012):
 <p style="margin-bottom: -1em">
 	- neighborhood limits
 	- socioeconomic characteristics
 	- each unit contains at least 100 household
 	
-- These analytical regions are calculated using the Max-p-regions technique (Duque et al., 2012), which guarantees statistical representativeness and minimizes intraregional heterogeneity 
+- These analytical regions are calculated using the Max-p-regions technique (Duque et al., 2012), which is a technique to aggregation of areas into a maximum number of homogeneous regions that guarantees statistical representativeness and minimizes intraregional heterogeneity 
 
 - We have <span style="color:blue">176 urban analytical regions</span> (average area: 0.521 $km^2$)
 
 <center><spam style="font-size:90%">**Figure 2. Analytic regions (176) and neighborhoods (243)**
-```{r, echo=FALSE, out.width="48%",fig.align='center'}
+```{r, echo=FALSE, out.width="46%",fig.align='center'}
 knitr::include_graphics("Figure2.png")
 ```
 
@@ -251,12 +251,37 @@ Informal workers are those employees who do not contribute to the social securit
 ```{r, echo=FALSE, out.width="55%",fig.align='center'}
 knitr::include_graphics("Figure3.png")
 ```
+---
+#  <span style="font-size:80%">Data and descriptive evidence</span>
+<spam style="font-size:90%">
+
+<center><spam style="font-size:90%">**Figure 4. Bivariate map of housing informality and labor informality**</center>
+```{r, echo=FALSE, out.width="60%",fig.align='center'}
+knitr::include_graphics("Figure4.png")
+```
 
 ---
 #  <span style="font-size:80%">Data and descriptive evidence</span>
 <spam style="font-size:90%">
 
-<center><spam style="font-size:90%">**Figure 4. Spatial distribution of the control variables**
+**<center><spam style="font-size:90%">Figure 5. Bivariate LISA map of housing informality and labor informality**</center>
+```{r, echo=FALSE, out.width="46%",fig.align='center'}
+knitr::include_graphics("Figure5.png")
+```
+<center><spam style="font-size:70%">Note: number of permutations = 999 and significance level at 5%. First-order<br> 
+Queen criterion of contiguity was used to calculate the spatial weights</center>
+
+<spam style="font-size:90%">
+- Regions with high informal housing present simultaneously high levels of labor informality, in particular in the east, west and north of the city $\Longrightarrow$ <span style="color:blue">urban informality is located in poor peripheral areas and there is a spatial simultaneity between types of informality</span>
+
+- Housing informality and labor informality are phenomena with a <span style="color:blue">high spatial persistence</span>
+
+
+---
+#  <span style="font-size:80%">Data and descriptive evidence</span>
+<spam style="font-size:90%">
+
+<center><spam style="font-size:90%">**Figure 6. Spatial distribution of the control variables**
 ```{r, echo=FALSE, out.width="44%",fig.align='center'}
 knitr::include_graphics("Figure6.png")
 ```
@@ -268,31 +293,6 @@ knitr::include_graphics("Figure6.png")
 ```{r, echo=FALSE, out.width="70%",fig.align='center'}
 knitr::include_graphics("t2.png")
 ```
-
----
-#  <span style="font-size:80%">Data and descriptive evidence</span>
-<spam style="font-size:90%">
-
-<center><spam style="font-size:90%">**Figure 5. Bivariate map of housing informality and labor informality**</center>
-```{r, echo=FALSE, out.width="60%",fig.align='center'}
-knitr::include_graphics("Figure4.png")
-```
-
----
-#  <span style="font-size:80%">Data and descriptive evidence</span>
-<spam style="font-size:90%">
-
-**<center><spam style="font-size:90%">Figure 6. Bivariate LISA map of housing informality and labor informality**</center>
-```{r, echo=FALSE, out.width="46%",fig.align='center'}
-knitr::include_graphics("Figure5.png")
-```
-<center><spam style="font-size:70%">Note: number of permutations = 999 and significance level at 5%. First-order<br> 
-Queen criterion of contiguity was used to calculate the spatial weights</center>
-
-<spam style="font-size:90%">
-- Regions with high informal housing present simultaneously high levels of labor informality, in particular in the east, west and north of the city $\Longrightarrow$ <span style="color:blue">urban informality is located in poor peripheral areas and there is a spatial simultaneity between types of informality</span>
-
-- Housing informality and labor informality are phenomena with a <span style="color:blue">high spatial persistence</span>
 
 ---
 name: model
