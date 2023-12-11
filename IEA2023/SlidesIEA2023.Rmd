@@ -121,7 +121,7 @@ name: motivation
 # <span style="font-size:80%">Motivation</span>
 <spam style="font-size:110%">
 
-- Many developing countries are characterized by the prevalence of housing informality, labor informality and informality of transport
+- Many developing countries are characterized by the prevalence of <span style="color:blue">housing informality</span>, <span style="color:blue">labor informality</span> and <span style="color:blue">informality of transport
 
 - <span style="color:blue">This triple informality in housing, employment and transport is an important factor driving the low levels in productivity and wellbeing observed in many cities in developing countries</span> (Vargas et al., 2017; OECD, 2018; Ferreyra and Roberts, 2018; Azunre et al, 2021) 
 
@@ -425,7 +425,7 @@ name: conclusions
 <br>
 
 #<div class="my-logo-right"></div> 
-Slides in [html](https://gusgarciacruz.github.io/Presentations/BIS/PresentacionComfama.html)
+Slides in [html](https://gusgarciacruz.github.io/Presentations/IEA2023/SlidesIEA2023.html)
 
 Slides in [PDF](https://gusgarciacruz.github.io/Presentations/IEA2023/SlidesIEA2023.pdf)
 
