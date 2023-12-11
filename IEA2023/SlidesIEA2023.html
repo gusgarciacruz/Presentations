@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title> Housing informality and labor informality in space    In search of the missing links</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".hbody[Gustavo A. García   School of Finance, Economics and Government  Universidad EAFIT   ggarci24@eafit.edu.co]" />
+    <meta name="author" content=".hbody[Erika R. Badillo  Faculty of Economics Universidad Autónoma Latinoamericana erika.badilloen@unaula.edu.co]" />
+    <meta name="author" content=".hbody[Juan Manuel Aristizábal   Faculty of Accounting, Economic and Administrative Sciences  Universidad de Manizales   jm.aristizabal@umanizales.edu.co] " />
+    <script src="libs/header-attrs-2.25/header-attrs.js"></script>
+    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i>","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times-circle\" style=\"color: #F94144\"><\/i>"})</script>
+    <link href="libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+    <link href="libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+    <link href="libs/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# <br>Housing informality and labor informality in space <br> <span style= "font-size:75%"> In search of the missing links
+]
+.author[
+### .hbody[<span style="font-size:75%"><span style="color:blue">Gustavo A. García</span></span> <br> <font size="3">School of Finance, Economics and Government<br> Universidad EAFIT <br> <a href="mailto:ggarci24@eafit.edu.co" class="email">ggarci24@eafit.edu.co</a>]
+]
+.author[
+### .hbody[<span style="font-size:75%">Erika R. Badillo</span> <br><font size="3">Faculty of Economics<br>Universidad Autónoma Latinoamericana<br><a href="mailto:erika.badilloen@unaula.edu.co" class="email">erika.badilloen@unaula.edu.co</a>]
+]
+.author[
+### .hbody[<span style="font-size:75%">Juan Manuel Aristizábal</span></span> <br> <font size="3">Faculty of Accounting, Economic and Administrative Sciences<br> Universidad de Manizales <br> <a href="mailto:jm.aristizabal@umanizales.edu.co" class="email">jm.aristizabal@umanizales.edu.co</a>]<br>
+]
+.date[
+### .hbody[<font size="4">20th IEA World Congress</span></font> <br> <font size="3">Medellín - Colombia<br><font size="3"> 11-15 December 2023]
+]
+
+---
+
+
+
+
+&lt;style&gt;
+.my-logo-right {
+    content: "";
+    position: absolute;
+    left: 400px;
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("qr.png");
+}
+
+.hbody {
+  line-height: .85;
+}
+
+body {
+  text-align: justify;
+}
+
+h1{
+  margin-top: -1px;
+  margin-bottom: -3px;
+}
+
+.small-code pre{
+  margin-bottom: -10px;
+  
+}  
+
+.medium-code pre{
+  margin-bottom: 2px;
+  
+}
+
+&lt;/style&gt;
+
+
+
+
+
+
+# &lt;span style="font-size:80%"&gt;Outline&lt;/span&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Motivation](#motivation)&lt;/span&gt; &lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Contribution](#contribution)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Relevant literature](#lite)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Data and descriptive evidence](#data)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Econometric model](#model)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Results](#results)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Conclusions](#conclusions)&lt;/span&gt;
+
+---
+name: motivation
+# &lt;span style="font-size:80%"&gt;Motivation&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+- Many developing countries are characterized by the prevalence of housing informality, labor informality and informality of transport
+
+- &lt;span style="color:blue"&gt;This triple informality in housing, employment and transport is an important factor driving the low levels in productivity and wellbeing observed in many cities in developing countries&lt;/span&gt; (Vargas et al., 2017; OECD, 2018; Ferreyra and Roberts, 2018; Azunre et al, 2021) 
+
+- &lt;span style="color:blue"&gt;Housing and labor informality&lt;/span&gt; are the phenomena with &lt;span style="color:blue"&gt;the highest incidence&lt;/span&gt; at the urban level and they are &lt;span style="color:blue"&gt;closely related to socioeconomic indicators such as poverty, inequality, quality of life&lt;/span&gt; and, in general, &lt;span style="color:blue"&gt;the development of cities and their productivity&lt;/span&gt; (UN-Habitat, 2016):
+
+&lt;br&gt;
+
+&lt;img src="t1.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+# &lt;span style="font-size:80%"&gt;Motivation&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- The cities in developing countries are characterized by the existent of areas hosting low-income workers living in precarious conditions 
+
+- &lt;span style="color:blue"&gt;These lower incomes might induce people to live in informal settlements, so that economic vulnerability and precarious working conditions may be within the causes of the emergence of informal housing&lt;/span&gt; (Lombard and Mitlin, 2020) 
+
+- &lt;span style="color:blue"&gt;The precarious working conditions along with higher restrictions to access to the financial system that face informal workers are thought to be important mechanisms that explain the spatial choice of housing and its characteristics&lt;/span&gt; (Vargas et al., 2017)
+
+---
+name: contribution
+# &lt;span style="font-size:80%"&gt;Contribution&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- Despite the extensive literature on both housing informality and labor informality, &lt;span style="color:blue"&gt;there is a lack of evidence on the relationship between these two phenomena in space&lt;/span&gt;
+
+- This paper aims to offer &lt;span style="color:blue"&gt;new evidence on the links between precarious housing conditions (informal housing) and limited access to quality employment (labor informality), considering the relationship and spatial dimension of these two phenomena&lt;/span&gt;
+
+- Using data at the intra-urban level in Medellin (Colombia), we identified the effect of labor informality on housing informality through &lt;span style="color:blue"&gt;spatial simultaneous equation models&lt;/span&gt;, which take into account the relationship between informal housing and labor informality and the spatial dependence
+
+---
+name: lite
+# &lt;span style="font-size:80%"&gt;Relevant literature&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+Several studies focus on analyzing the determinants of housing informality and labor informality separately, forgetting the interdependence between them
+
+&lt;span style="color:blue"&gt;Among the few studies that simultaneously analyze these phenomena, they agree that precarious working conditions may be within the causes of precarious housing conditions&lt;/span&gt;
+
+**&lt;span style="color:blue"&gt;Determinants of housing informality&lt;/span&gt;**
+&lt;p style="margin-bottom: -1em"&gt;
+- UN-Habitat (2013): lag in infrastructure
+- Inostroza et al. (2013): urban growth
+- &lt;span style="color:blue"&gt;Bonet et al. (2016): labor informality&lt;/span&gt;
+- &lt;span style="color:blue"&gt;Posada and Moreno (2019): labor informality, structure of the cities and price of land&lt;/span&gt;
+- Posada (2018): population growth
+
+&lt;p style="margin-bottom: 2em"&gt;
+
+**&lt;span style="color:blue"&gt;Determinants of labor informality&lt;/span&gt;**
+&lt;p style="margin-bottom: -1em"&gt;
+- Boisjoly et al. (2017): public transport
+- Del Carpio and Patrick (2020): growth of cities
+- Gutierrez (2021): inequality
+- Lombard et al. (2021): level of income
+
+---
+name: data
+#  &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:80%"&gt;
+
+- Population: 2.6 millions (Colombia: 48 millions, Bogotá: 8 millions)
+- Area: 380 `\(km^2\)` (Colombia: 1,141,748 `\(km^2\)`)
+- &lt;span style="color:blue"&gt;Density: 6749 `\(km^2\)` (Bogotá: 4531 `\(km^2\)`)
+- Unemployment: 8.6% (Colombia: 9.2%)
+- &lt;span style="color:blue"&gt;Housing informality: 7% (Colombia: 22%)
+- &lt;span style="color:blue"&gt;Labor informality: 44% (Colombia: 50%)
+- Administrative division: 16 communes and 243 neighborhoods 
+
+
+&lt;center&gt;&lt;spam style="font-size:90%"&gt;**Figure 1. Study area: Medellín**
+&lt;img src="Figure1.png" width="62%" style="display: block; margin: auto;" /&gt;
+
+---
+#  &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:110%"&gt;
+
+- The data used in this paper came from &lt;span style="color:blue"&gt;the Quality of Life Survey (QLS)&lt;/span&gt; for Medellín in 2017
+
+&lt;p style="margin-bottom: 1.5em"&gt;
+
+- This cross-section survey contains individual-level information on household characteristics, demographics, education, social security, labor market, and indicators of poverty and socioeconomic conditions
+
+&lt;p style="margin-bottom: 1.5em"&gt;
+
+- The sample includes a total of &lt;span style="color:blue"&gt;42806&lt;/span&gt; individuals (&lt;span style="color:blue"&gt;12205&lt;/span&gt; households)
+
+---
+#  &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+- Our unit of analysis are the analytical regions, which are homogeneous regions that are defined in terms of (Duque et al., 2012):
+&lt;p style="margin-bottom: -1em"&gt;
+	- neighborhood limits
+	- socioeconomic characteristics
+	- each unit contains at least 100 household
+	
+- These analytical regions are calculated using the Max-p-regions technique (Duque et al., 2012), which guarantees statistical representativeness and minimizes intraregional heterogeneity 
+
+- We have &lt;span style="color:blue"&gt;176 urban analytical regions&lt;/span&gt; (average area: 0.521 `\(km^2\)`)
+
+&lt;center&gt;&lt;spam style="font-size:90%"&gt;**Figure 2. Analytic regions (176) and neighborhoods (243)**
+&lt;img src="Figure2.png" width="49%" style="display: block; margin: auto;" /&gt;
+
+---
+#  &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+- &lt;span style="color:blue"&gt;Housing informality&lt;/span&gt;&lt;br&gt;
+A dwelling is considered informal if it has at least one of the following conditions (UN-Habitat, 2003):
+&lt;p style="margin-bottom: -1em"&gt;
+  - walls that are not made of durable materials
+  - overcrowding
+  - lack of aqueduct
+  - toilet not connected to the aqueduct
+
+- &lt;span style="color:blue"&gt;Labor informality&lt;/span&gt;&lt;br&gt;
+Informal workers are those employees who do not contribute to the social security system: health and pension
+
+&lt;center&gt;&lt;spam style="font-size:90%"&gt;**Figure 3. Housing informality and labor informality**
+&lt;img src="Figure3.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+---
+#  &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+&lt;center&gt;&lt;spam style="font-size:90%"&gt;**Figure 4. Spatial distribution of the control variables**
+&lt;img src="Figure6.png" width="44%" style="display: block; margin: auto;" /&gt;
+
+---
+#  &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+&lt;img src="t2.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+#  &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+&lt;center&gt;&lt;spam style="font-size:90%"&gt;**Figure 5. Bivariate map of housing informality and labor informality**&lt;/center&gt;
+&lt;img src="Figure4.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+#  &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+**&lt;center&gt;&lt;spam style="font-size:90%"&gt;Figure 6. Bivariate LISA map of housing informality and labor informality**&lt;/center&gt;
+&lt;img src="Figure5.png" width="46%" style="display: block; margin: auto;" /&gt;
+&lt;center&gt;&lt;spam style="font-size:70%"&gt;Note: number of permutations = 999 and significance level at 5%. First-order&lt;br&gt; 
+Queen criterion of contiguity was used to calculate the spatial weights&lt;/center&gt;
+
+&lt;spam style="font-size:90%"&gt;
+- Regions with high informal housing present simultaneously high levels of labor informality, in particular in the east, west and north of the city `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;urban informality is located in poor peripheral areas and there is a spatial simultaneity between types of informality&lt;/span&gt;
+
+- Housing informality and labor informality are phenomena with a &lt;span style="color:blue"&gt;high spatial persistence&lt;/span&gt;
+
+---
+name: model
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt; 
+&lt;spam style="font-size:120%"&gt;
+
+To measure the relationship between housing informality and labor informality while considering the simultaneity of these two phenomena, we estimate the following system of two equations:
+
+
+&lt;img src="eq1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Term `\(\textbf{x}_r\)` is a vector of control variables, which includes population with tertiary education, the share of female heads of household, the share of children under six years of age, population density, and the unemployment rate
+
+&lt;span style="color:blue"&gt;Our coefficients of interest to estimate are `\(\beta_{11}\)` and `\(\beta_{21}\)`, which represent the effect of labor informality on informal housing and vice versa, respectively
+
+---
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt; 
+&lt;spam style="font-size:120%"&gt;
+
+To consider the spatial dimension of housing informality and labor informality, we estimate four types of spatial simultaneous models:
+
+&lt;span style="color:blue"&gt;Spatial Lag Model (SLM)&lt;/span&gt;
+&lt;img src="eq2.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+&lt;span style="color:blue"&gt;Spatial Error Model (SEM)&lt;/span&gt;
+&lt;img src="eq3.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+&lt;spam style="font-size:90%"&gt;Where &lt;span style="color:blue"&gt; `\(W\)`&lt;/span&gt; is a matrix (r x r) of spatial connectivity among analytical regions, which, in our case, is a standardized first-order Queen type
+---
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt; 
+&lt;spam style="font-size:120%"&gt;
+
+&lt;span style="color:blue"&gt;Spatial Autoregressive Combined Model (SAC)&lt;/span&gt;
+&lt;img src="eq4.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+&lt;span style="color:blue"&gt;Spatial Durbin Model (SDM)&lt;/span&gt;
+&lt;img src="eq5.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt; 
+&lt;spam style="font-size:100%"&gt;
+
+Estimating the proposed system of equations may face two problems related to &lt;span style="color:blue"&gt;endogeneity&lt;/span&gt; (Le Gallo and Fingleton, 2021):
+
+- including endogenous variables as regressors, that is, the inclusion of the dependent variable from the second equation (labor informality) in the first equation and the inclusion of the dependent variable from the first equation (housing informality) in the second equation
+
+- including a spatial lag in the model
+
+To deal with these endogeneity problems, we use an &lt;span style="color:blue"&gt;Instrumental Variable (IV) approach:
+- we use the Euclidean distance (in km) from the centroids of each analytical region to Medellín’s Central Business District (CBD) as an instrument for the labor informality variable `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;spatial mismatch hypothesis&lt;/span&gt;
+
+- we use the level of housing informality lagged in time (2011) as an instrument for the current housing informality `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;temporal inertia of housing informality 
+
+- endogeneity problem associated with the inclusion of a spatial lag in the models is corrected including spatial lags of a superior order of control variables (Kelejian and Robinson, 1993; Kelejian and Prucha, 1998; Fingleton and Le Gallo, 2008). `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;spatial lags of order 2&lt;/span&gt; (López et al., 2020)
+
+Another methodological aspect to be considered in estimating the proposed system of spatial simultaneous equations is &lt;span style="color:blue"&gt;the presence of cross-equation correlations in the error terms&lt;/span&gt; `\(\Longrightarrow\)` &lt;span style="color:blue"&gt; informal transport 
+
+---
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt; 
+&lt;spam style="font-size:120%"&gt;
+
+- In summary, our model is a &lt;span style="color:blue"&gt;system of spatial simultaneous equations that allows for correlation between the errors of the equations 
+
+- We use the &lt;span style="color:blue"&gt;Generalized Spatial Three-Stage Least Square (GS3SLS) estimator&lt;/span&gt; proposed by Kelejian and Prucha (2004) to estimate this model 
+
+- This procedure first corrects the endogeneity problem using a two-stage estimator, namely the GS2SLS method. Then, it considers the relationship between the equations in the system through the stochastic disturbances analogous to a &lt;span style="color:blue"&gt;Seemingly Unrelated Regression (SUR)
+
+---
+name: results
+# &lt;span style="font-size:80%"&gt;Results&lt;/span&gt; 
+&lt;spam style="font-size:85%"&gt;
+
+&lt;img src="t3.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+- The results for all models consistently indicate that &lt;span style="color:blue"&gt;labor informality has a positive and statistically significant effect on informal housing, suggesting that precarious labor conditions are a crucial driver of precarious housing conditions
+
+- &lt;span style="color:blue"&gt;The estimates reveal that informal housing positively and significantly affects labor informality
+
+---
+# &lt;span style="font-size:80%"&gt;Results&lt;/span&gt; 
+&lt;spam style="font-size:90%"&gt;
+
+&lt;img src="t4.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+- The estimated direct effects of labor informality on informal housing confirm our previous findings that &lt;span style="color:blue"&gt;informal work activities are critical to the emergence of informal settlements
+
+- &lt;span style="color:blue"&gt;The indirect effect (or spillover effect) of labor informality on informal housing is not statistically significant&lt;/span&gt;, indicating that the level of informal housing in one region is not affected by the level of labor informality in neighboring regions 
+
+- &lt;span style="color:blue"&gt;This result confirms the highly localized relationship between informal work activities and informal settlements, implying that many poor workers may find shelter and work opportunities within the slum economy 
+
+---
+name: conclusions
+# &lt;span style="font-size:80%"&gt;Conclusions&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- &lt;span style="color:blue"&gt;Urban informality is a persistent phenomenon in developing countries&lt;/span&gt; and it is an important factor affecting the productivity and wellbeing of cities
+    
+- In this study we analyze the relationship between informal housing and labor informality at the intra-urban level in Medellín (Colombia), taking into account the spatial dimension of these two phenomena
+    
+- From a point of view of the location of the urban informality, we found:
+&lt;p style="margin-bottom: -1em"&gt;
+  - Urban informality is located in &lt;span style="color:blue"&gt;poor peripheral areas&lt;/span&gt;
+  - There is a &lt;span style="color:blue"&gt;spatial simultaneity&lt;/span&gt; between housing informality and labor informality
+  - Housing informality and labor informality are phenomena with a &lt;span style="color:blue"&gt;high spatial persistence
+    
+- The estimates of the spatial simultaneous equation models showed that labor informality positively affects housing informality `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;precarious labor conditions are important factors that explain the choice of precarious housing
+    
+- Additionally, there are not spatial spillover effects of labor informality on informal housing `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;This may suggest a highly localized relationship between informal housing and labor informality due to the peculiarities of the informal work carried out within homes, leading to precarious housing conditions 
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
