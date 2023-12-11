@@ -195,7 +195,7 @@ name: data
 
 
 <center><spam style="font-size:90%">**Figure 1. Study area: Medellín**
-```{r, echo=FALSE, out.width="62%",fig.align='center'}
+```{r, echo=FALSE, out.width="60%",fig.align='center'}
 knitr::include_graphics("Figure1.png")
 ```
 
@@ -228,7 +228,7 @@ knitr::include_graphics("Figure1.png")
 - We have <span style="color:blue">176 urban analytical regions</span> (average area: 0.521 $km^2$)
 
 <center><spam style="font-size:90%">**Figure 2. Analytic regions (176) and neighborhoods (243)**
-```{r, echo=FALSE, out.width="49%",fig.align='center'}
+```{r, echo=FALSE, out.width="48%",fig.align='center'}
 knitr::include_graphics("Figure2.png")
 ```
 
@@ -415,4 +415,18 @@ name: conclusions
 - The estimates of the spatial simultaneous equation models showed that labor informality positively affects housing informality $\Longrightarrow$ <span style="color:blue">precarious labor conditions are important factors that explain the choice of precarious housing
     
 - Additionally, there are not spatial spillover effects of labor informality on informal housing $\Longrightarrow$ <span style="color:blue">This may suggest a highly localized relationship between informal housing and labor informality due to the peculiarities of the informal work carried out within homes, leading to precarious housing conditions 
+
+---
+<font size = "5">
+<center>**<span style="color:#2a326b"><span style= "font-size:110%">Housing informality and labor informality in space**<br>
+**<span style="color:#2a326b"><span style= "font-size:100%">In search of the missing links**</center>
+<br>
+<br>
+<br>
+
+#<div class="my-logo-right"></div> 
+Slides in [html](https://gusgarciacruz.github.io/Presentations/BIS/PresentacionComfama.html)
+
+Slides in [PDF](https://gusgarciacruz.github.io/Presentations/IEA2023/SlidesIEA2023.pdf)
+
 
