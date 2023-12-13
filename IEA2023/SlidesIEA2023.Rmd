@@ -420,8 +420,8 @@ name: conclusions
 <font size = "5">
 <center>**<span style="color:#2a326b"><span style= "font-size:110%">Housing informality and labor informality in space**<br>
 **<span style="color:#2a326b"><span style= "font-size:100%">In search of the missing links**<br>
-**Gustavo García**<br>
-<span style= "font-size:70%">Universidad EAFIT</center>
+**<span style= "font-size:80%">Gustavo García**<br>
+<span style= "font-size:65%">Universidad EAFIT</center>
 <br>
 <br>
 <br>
