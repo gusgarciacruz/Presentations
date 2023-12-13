@@ -2,7 +2,7 @@
 title: <br>Housing informality and labor informality in space <br> <span style= "font-size:75%"> In search of the missing links
 
 author: 
-  - .hbody[<span style= "font-size:75%"><span style="color:blue">Gustavo A. García</span></span> <br> <font size="3">School of Finance, Economics and Government<br> Universidad EAFIT <br> ggarci24@eafit.edu.co]
+  - .hbody[<span style= "font-size:75%"><span style="color:blue">[Gustavo A. García](https://gusgarciacruz.github.io/cv)</span></span> <br> <font size="3">School of Finance, Economics and Government<br> Universidad EAFIT <br> ggarci24@eafit.edu.co]
   - .hbody[<span style= "font-size:75%">Erika R. Badillo</span> <br><font size="3">Faculty of Economics<br>Universidad Autónoma Latinoamericana<br>erika.badilloen@unaula.edu.co]
   - .hbody[<span style= "font-size:75%">Juan Manuel Aristizábal</span></span> <br> <font size="3">Faculty of Accounting, Economic and Administrative Sciences<br> Universidad de Manizales <br> jm.aristizabal@umanizales.edu.co]<br>
   
@@ -419,7 +419,9 @@ name: conclusions
 ---
 <font size = "5">
 <center>**<span style="color:#2a326b"><span style= "font-size:110%">Housing informality and labor informality in space**<br>
-**<span style="color:#2a326b"><span style= "font-size:100%">In search of the missing links**</center>
+**<span style="color:#2a326b"><span style= "font-size:100%">In search of the missing links**<br>
+**Gustavo García**<br>
+<span style= "font-size:70%">Universidad EAFIT</center>
 <br>
 <br>
 <br>
