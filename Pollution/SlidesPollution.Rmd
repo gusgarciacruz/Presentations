@@ -5,7 +5,7 @@ author:
   - .hbody[<span style= "font-size:75%">Juan Manuel Aristizábal</span></span> <br> <font size="3">Faculty of Accounting, Economics and Administrative Sciences<br> Universidad de Manizales <br> jm.aristizabal@umanizales.edu.co]
   - .hbody[<span style= "font-size:75%"><span style="color:blue">Gustavo A. García</span></span> <br> <font size="3">School of Finance, Economics and Government<br> Universidad EAFIT <br> ggarci24@eafit.edu.co]<br><br><br><br>
   
-date: .hbody[<font size="4">Congreso anual - Red Investigadores de Economía 2024 </span></font> <br> <font size="3">Universidad del Norte<br><font size="3">Barranquilla - Colombia<br><font size="3"> 6-8 November 2024]
+date: .hbody[<font size="4">LACEA 2024 Annual Meeting </span></font> <br> <font size="3">Universidad de la República (Udelar)<br><font size="3">Montevideo - Uruguay<br><font size="3"> November 14-16, 2024]
 output:
   xaringan::moon_reader:
     lib_dir: libs
