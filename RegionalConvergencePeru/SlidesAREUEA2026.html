@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Institutional quality, climate change impacts, and regional economic growth    Evidence from Peru</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".hbody[Gustavo A. García   School of Finance, Economics and Government  Universidad EAFIT   ggarci24@eafit.edu.co]" />
+    <meta name="author" content=".hbody[ Paula Restrepo   The World Bank   prestrepocadavid@worldbank.org]" />
+    <meta name="author" content=".hbody[Juan Manuel Aristizábal   Faculty of Accounting, Economics and Administrative Sciences  Universidad de Manizales   jm.aristizabal@umanizales.edu.co] " />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i>","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times-circle\" style=\"color: #F94144\"><\/i>"})</script>
+    <link href="libs/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Institutional quality, climate change impacts, and regional economic growth <br> <span style= "font-size:75%"> Evidence from Peru
+]
+.author[
+### .hbody[<span style="font-size:75%"><span style="color:blue">Gustavo A. García</span></span> <br> <font size="3">School of Finance, Economics and Government<br> Universidad EAFIT <br> <a href="mailto:ggarci24@eafit.edu.co" class="email">ggarci24@eafit.edu.co</a>]
+]
+.author[
+### .hbody[<span style="font-size:75%"> Paula Restrepo</span> <br> <font size="3">The World Bank <br> <a href="mailto:prestrepocadavid@worldbank.org" class="email">prestrepocadavid@worldbank.org</a>]
+]
+.author[
+### .hbody[<span style="font-size:75%">Juan Manuel Aristizábal</span></span> <br> <font size="3">Faculty of Accounting, Economics and Administrative Sciences<br> Universidad de Manizales <br> <a href="mailto:jm.aristizabal@umanizales.edu.co" class="email">jm.aristizabal@umanizales.edu.co</a>]<br>
+]
+.date[
+### .hbody[<font size="4">AREUEA International Conference 2026 </span></font> <br> <font size="3">Universidad EAFIT<br><font size="3">Medellín - Colombia<br><font size="3"> July 23-25, 2024]
+]
+
+---
+
+
+
+
+&lt;style&gt;
+.my-logo-right {
+    content: "";
+    position: absolute;
+    left: 400px;
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("qr.png");
+}
+
+.hbody {
+  line-height: .85;
+}
+
+body {
+  text-align: justify;
+}
+
+h1{
+  margin-top: -1px;
+  margin-bottom: -3px;
+}
+
+.small-code pre{
+  margin-bottom: -10px;
+  
+}  
+
+.medium-code pre{
+  margin-bottom: 2px;
+  
+}
+
+&lt;/style&gt;
+
+
+
+
+
+
+# &lt;span style="font-size:80%"&gt;Outline&lt;/span&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Motivation](#motivation)&lt;/span&gt; &lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Contribution](#contribution)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Relevant literature](#lite)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Data and descriptive evidence](#data)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Econometric model](#model)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Results](#results)&lt;/span&gt;&lt;br&gt;
+
+- &lt;span style="font-size:150%"&gt;[&lt;span style="color:black"&gt;Conclusions](#conclusions)&lt;/span&gt;
+
+---
+name: motivation
+# &lt;span style="font-size:80%"&gt;Motivation&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- Regional economic growth is a central topic in economic geography, as scholars seek to understand the factors that &lt;span style="color:blue"&gt;drive prosperity and regional disparities&lt;/span&gt; (Hansen, 2022). Traditional theories emphasize the role of:
+&lt;p style="margin-bottom: -1em"&gt;
+ - physical capital (Solow, 1956; Swan, 1956)
+ - human capital and innovation (Romer, 1986; Lucas, 1988) 
+ 
+- However, these explanations have become insufficient to account for persistent regional inequalities and two bodies of literature have emerged in parallel to contribute to the discussion: &lt;span style="color:blue"&gt;institutional quality&lt;/span&gt; and &lt;span style="color:blue"&gt;climate change&lt;/span&gt;
+
+- &lt;span style="color:blue"&gt;Institutional quality&lt;/span&gt;: institutions influence economic performance through multiple channels, including productivity, innovation, entrepreneurship, and resource allocation efficiency  (Rodríguez-Pose, 2013; Rodríguez-Pose and Ketterer, 2020)
+
+- &lt;span style="color:blue"&gt;Climate change&lt;/span&gt;:  temperature anomalies and extreme weather events, reduce labor productivity, damage agricultural output, and deter capital investment, thereby widening regional disparities  (Burke et al., 2015; Dell et al., 2012; Kalkuhl and Wenz, 2020)
+
+---
+# &lt;span style="font-size:80%"&gt;Motivation&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+**This paper** 
+&lt;p style="margin-bottom: -1em"&gt;
+
+- Institutional efficiency is not merely a determinant of regional growth, but also it is a fundamental moderator of how regional economies absorb and respond to climate variability 
+
+- Regions have different economic structures and institutional capacities, absorbing climate disturbances in different ways `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;heterogeneity in climate change sensitivity constitutes an important and underexplored dimension of regional inequality (Warsame et al., 2021; Acacha-Acakpo et al., 2024)
+
+---
+name: contribution
+# &lt;span style="font-size:80%"&gt;Contribution&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- This paper contributes to the literature on the effects of institutional quality and climate change on regional economic growth  
+
+- We offer new empirical evidence, &lt;span style="color:blue"&gt;studying the context of a developing country where there are significant regional institutional disparities and a high degree of economic dependence on sectors vulnerable to climate change, such as agriculture and tourism.
+
+- Using data at the regional level for &lt;span style="color:blue"&gt;Peru&lt;/span&gt; on a balanced panel of 24 departments over the period 2004 to 2019, we estimate &lt;span style="color:blue"&gt;spatial growth models&lt;/span&gt; that incorporate the efficiency of public resource allocation, and temperature and precipitation, as measures of climate change
+
+---
+name: lite
+# &lt;span style="font-size:80%"&gt;Relevant literature&lt;/span&gt;
+&lt;spam style="font-size:115%"&gt;
+
+- The literature has recognized that &lt;span style="color:blue"&gt;institutional factors&lt;/span&gt; and &lt;span style="color:blue"&gt;environmental conditions&lt;/span&gt; are important factors explaining the regional economic growth (Baarsch et al., 2020; Aristizábal &amp; García, 2021; Kouadio &amp; Gakpa, 2022)
+
+- In developing countries these factors are more significant, as &lt;span style="color:blue"&gt;regional inequalities are persistent&lt;/span&gt; and this is exacerbated by &lt;span style="color:blue"&gt;institutional weaknesses&lt;/span&gt; and &lt;span style="color:blue"&gt;climate vulnerability&lt;/span&gt; (Iammarino et al., 2019; Ibourk &amp; Elouaourti, 2023; Paglialunga et al., 2023)
+
+- Institutions play a critical role in economic growth (Acemoglu &amp; Robinson, 2006):
+&lt;p style="margin-bottom: -1em"&gt;
+ - &lt;span style="color:blue"&gt;Europe and North America&lt;/span&gt;: strong and transparent institutions correlate with higher growth rates and lower regional inequalities (Rodríguez-Pose &amp; Di Cataldo, 2015; Charron et al., 2014)
+ - &lt;span style="color:blue"&gt;Developing countries&lt;/span&gt;: institutional capacity tends to be weaker and more heterogeneous, resulting in uneven growth trajectories and regional economic divergence (Bosker &amp; Garretsen, 2009)
+
+- Climate change has emerged as a key determinant of regional economic performance, where countries heavily dependent on climate-sensitive sectors, such as agriculture and tourism, face greater economic risks `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;developing countries, but the evidence in these countries remains scarce (Burke et al., 2015; Damania et al., 2020; Baarsch et al., 2020)
+
+&lt;span style="color:blue"&gt;This paper aims to offer new evidence on how institutional efficiency moderates the economic impact of climate variability shocks on regional growth
+ 
+---
+name: data
+# &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:100%"&gt;
+
+**&lt;span style="color:blue"&gt;Peru&lt;/span&gt;**
+&lt;p style="margin-bottom: -1em"&gt;
+- Population: 33 millions (Lima: 10.4 mill)
+- Area: 1.1 million km2
+- Tourism sector: 8% of GDP (the biggest sector); Agriculture sector: 5% of GDP 
+
+.pull-left-40[
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Figure 1. Peru**
+&lt;p style="margin-bottom: -1em"&gt;
+&lt;img src="Peru.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right-60[
+&lt;spam style="font-size:100%"&gt;**Table 1. Economic and social indicators in Peru and other countries**
+&lt;p style="margin-bottom: -1em"&gt;
+&lt;img src="Peruind.png" width="130%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+- &lt;spam style="font-size:80%"&gt;&lt;span style="color:blue"&gt;Low economic growth
+- &lt;spam style="font-size:80%"&gt;&lt;span style="color:blue"&gt;high poverty levels
+- &lt;spam style="font-size:80%"&gt;&lt;span style="color:blue"&gt;weaker perceptions of institutional performance
+]
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+
+.pull-left-40[
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Figure 2. Departments of Peru**
+&lt;img src="figure1_peru_regions.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right-60[
+- Spatial analysis unit: &lt;span style="color:blue"&gt;24 departments&lt;/span&gt;
+
+- Departments are country subdivisions similar to US states and are granted a certain degree of autonomy
+
+- The central region comprises the departments with the largest populations and highest levels of economic activity, including Ancásh, Huánuco, Lima, Pasco, Junín, Huancavelica, and Ica, accounting for 50% of the national population
+
+]
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+We uses a balanced panel dataset covering &lt;span style="color:blue"&gt;24 departments&lt;/span&gt; of Peru over the period &lt;span style="color:blue"&gt;2004 to 2019 (T=16)&lt;/span&gt;, yielding &lt;span style="color:blue"&gt;384 observations&lt;/span&gt;
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Table 2. Variable description**
+&lt;img src="var.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Figure 3. Real GDP per capita by departments** 
+&lt;img src="peru_gdp.png" width="58%" style="display: block; margin: auto;" /&gt;
+&lt;p style="margin-top: -1em"&gt;
+&lt;spam style="font-size:60%"&gt;Notes: Real GDP per capita in millions of Peruvian Soles of 2007. Source: INEI.
+
+&lt;p style="margin-top: -.5em"&gt;
+&lt;div style="text-align: justify"&gt;
+There is a significant regional differences in economic performance, which have become more pronounced over time&lt;/p&gt;
+
+Coastal departments, such as Ancash, Lima, Ica, Arequipa, Moquegua, and Tacna, present higher GDP per capita than those located in the Amazon region (Loreto, Amazonas, Ucayali, Madre de Dios, and Puno)
+&lt;/div&gt;
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Figure 4. Quality of public administration index (IQPA) by departments**
+&lt;img src="peru_iqpa.png" width="58%" style="display: block; margin: auto;" /&gt;
+&lt;p style="margin-top: -2em"&gt;
+&lt;spam style="font-size:60%"&gt;Source: RENAMU
+
+&lt;p style="margin-top: -.5em"&gt;
+&lt;div style="text-align: justify"&gt;
+High institutional quality: Ucayali, Pasco, Lambayeque, and Madre de Dios
+
+Low institutional quality: Apurímac, Amazonas, Arequipa, and Huancavelica 
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:90%"&gt;
+
+
+.pull-left-50[
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Figure 5. Mean annual temperature**
+&lt;img src="peru_tem.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;p style="margin-bottom: -1em"&gt;
+&lt;spam style="font-size:60%"&gt;Source: Climate Change Knowledge Portal - World Bank
+]
+
+.pull-right-50[
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Figure 6. Total annual precipitation**
+&lt;img src="peru_pre.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;p style="margin-bottom: -1em"&gt;
+&lt;spam style="font-size:60%"&gt;Source: Climate Change Knowledge Portal - World Bank
+]
+
+The highest average temperatures (&gt;24°C) and accumulated precipitation (&gt;2300 mm) were recorded in the Amazon region: Loreto, Ucayali, and Madre de Dios
+
+
+---
+# &lt;span style="font-size:80%"&gt;Data and descriptive evidence&lt;/span&gt;
+&lt;spam style="font-size:100%"&gt;
+
+We tested the existence of sigma-type convergence in real GDP per capita:
+&lt;p style="margin-bottom: -1em"&gt;
+- Sigma convergence refers to the reduction over time in the cross-sectional dispersion of income per capita across regions
+- This measure captures the tendency of poorer regions to grow faster than richer ones 
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Figure 6. Coefficient of variation and Theil index of real GDP per capita**
+&lt;img src="sig_conv.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+name: model
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt;
+&lt;spam style="font-size:100%"&gt;
+
+&lt;span style="color:blue"&gt;Beta convergence (Barro and Sala-i-Martin, 1991)&lt;/span&gt;:
+
+The functional form of the conditional Beta convergence models using panel data is as follows:
+
+`$$ln\left(\frac{Y_{it}}{Y_{it-1}}\right) = \alpha_i + \beta lnY_{it-1}$$`
+`$$\hspace{11.8cm} + \lambda InstQuality_{ite} + \delta lnY_{it-1} \times InstQuality$$`
+`$$\hspace{11.8cm} + \mu ClimateChange_{it} + \omega ClimateChange^2_{it}$$`
+`$$\hspace{4cm} + \theta X_{it} + u_{it}$$`
+
+&lt;spam style="font-size:95%"&gt; **Dependent variable**: GDP per capita growth rate for department `\(i\)` between period `\(t\)` and period `\(t−1\)` 
+&lt;p style="margin-bottom: -.5em"&gt;
+&lt;spam style="font-size:95%"&gt; `\(Y_{it-1}\)`: the GDP per capita for department `\(i\)` in period `\(t−1\)`
+&lt;p style="margin-bottom: -.5em"&gt;
+&lt;spam style="font-size:95%"&gt; &lt;span style="color:blue"&gt; `\(\beta\)`: convergence coefficient to estimate and is expected to be negative to reflect departments catching up to their steady-state levels
+&lt;p style="margin-bottom: -.5em"&gt;
+&lt;spam style="font-size:95%"&gt; `\(InstQuality\)`: efficiency, capacity and &lt;span style="color:blue"&gt;IQPA
+&lt;p style="margin-bottom: -.5em"&gt;
+&lt;spam style="font-size:95%"&gt; &lt;span style="color:blue"&gt; `\(\delta\)`: measures whether institutional performance facilitates regional economic growth and convergence 
+&lt;p style="margin-bottom: -.5em"&gt;
+&lt;spam style="font-size:95%"&gt; `\(ClimateChange\)`: temperature and precipitation (quadratic term allows us to identify the nonlinear relationship, threshold effect)
+&lt;p style="margin-bottom: -.5em"&gt;
+&lt;spam style="font-size:95%"&gt; `\(X\)`: is a matrix of explanatory variables representing different departmental steady states
+&lt;p style="margin-bottom: -.5em"&gt;
+&lt;spam style="font-size:95%"&gt; `\(α_i\)`: fixed effects for each department and captures unobserved heterogeneity related to the steady state of each department
+&lt;p style="margin-bottom: -.5em"&gt;
+&lt;spam style="font-size:95%"&gt; `\(u_{it}\)`: error term
+
+---
+# &lt;span style="font-size:80%"&gt;Econometric model&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+In addition, we estimate the models of economic growth augmented by spatial effects
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Table 3. Spatial panel data models**&lt;/center&gt;
+&lt;img src="models.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+`\(W\)` is the standardized queen-type first-order spatial contiguity matrix for all the models
+
+---
+name: results
+# &lt;span style="font-size:80%"&gt;Results&lt;/span&gt;
+&lt;spam style="font-size:85%"&gt;
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Table 4. Estimates of spatial panel data models of growth**&lt;/spam&gt;&lt;/center&gt;
+&lt;center&gt; &lt;spam style="font-size:70%"&gt; `\(Y\)` = GDP per capita growth rate&lt;/center&gt;
+&lt;img src="res1.png" width="53%" style="display: block; margin: auto;" /&gt;
+Results consistently confirm the presence of conditional `\(\beta\)`-convergence among Peruvian departments `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;poorer regions tend to grow faster than richer ones
+
+---
+# &lt;span style="font-size:80%"&gt;Results&lt;/span&gt;
+&lt;spam style="font-size:85%"&gt;
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Table 4. Estimates of spatial panel data models of growth**&lt;/center&gt;
+&lt;center&gt; &lt;spam style="font-size:70%"&gt; `\(Y\)` = GDP per capita growth rate&lt;/center&gt;
+&lt;img src="res2.png" width="53%" style="display: block; margin: auto;" /&gt;
+- Regarding the effect of the institutional variable, we observe that it is positive and statistically significant `\(\Longrightarrow\)` &lt;span style="color:blue"&gt;better public administration performance positively impacts the region's economic growth
+- The interaction term between institutional performance and regional economic growth show that &lt;span style="color:blue"&gt;good institutional performance through institutional efficiency and capacity helps facilitate regional economic convergence in Peru
+
+---
+# &lt;span style="font-size:80%"&gt;Results&lt;/span&gt;
+&lt;spam style="font-size:85%"&gt;
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Table 4. Estimates of spatial panel data models of growth**&lt;/center&gt;
+&lt;center&gt; &lt;spam style="font-size:70%"&gt; `\(Y\)` = GDP per capita growth rate&lt;/center&gt;
+&lt;img src="res3.png" width="53%" style="display: block; margin: auto;" /&gt;
+
+&lt;span style="color:blue"&gt;Climate change impacts  are affecting the economic growth in Peru during the period analyzed
+
+---
+# &lt;span style="font-size:80%"&gt;Results&lt;/span&gt;
+&lt;spam style="font-size:85%"&gt;
+
+&lt;center&gt;&lt;spam style="font-size:100%"&gt;**Figure 7. Effect of temperature on economic growth**&lt;/center&gt;
+&lt;img src="res4.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+&lt;span style="color:blue"&gt;There is a positive effect of temperature on economic growth, but this effect is negative after 22.75°C
+
+---
+name: conclusions
+# &lt;span style="font-size:80%"&gt;Conclusions&lt;/span&gt;
+&lt;spam style="font-size:120%"&gt;
+
+- In this paper we analyze &lt;span style="color:blue"&gt;the effects of institutional quality and climate change on economic growth&lt;/span&gt; at the intra-regional level in the context of a developing Latin American country, Peru
+
+- This study makes a novel contribution in its &lt;span style="color:blue"&gt;simultaneous incorporation of institutional and climate risk variables and spatial dependence into a panel model of intra-regional growth&lt;/span&gt;, which has been little explored in the literature on regional growth in developing countries
+
+- The findings highlight the &lt;span style="color:blue"&gt;critical role of local institutional quality in fostering economic growth
+
+- This study shows that &lt;span style="color:blue"&gt;climate change has a complex relationship with regional economic growth
+
+- Temperature significantly impact Peru's economic growth over the analyzed period. &lt;span style="color:blue"&gt;Including a quadratic term for temperature allows for identifying a nonlinear relationship consistent with economic theory, suggesting that rising temperatures harm growth beyond a certain threshold
+
+- &lt;span style="color:blue"&gt;Climate change poses a serious challenge to regional growth&lt;/span&gt;. Addressing its adverse effects requires adaptive strategies, such as investments in climate-resilient infrastructure and sustainable agricultural practices, to mitigate temperature-related economic losses
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
